@@ -1,0 +1,31 @@
+
+:root{
+    --bg-color: linear-gradient(90deg, blueviolet, gray, aqua);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: var(--bg-color);
+    background-size: 300%;
+    animation: bg 7s infinite alternate;
+
+}
+
+@keyframes bg{
+    0% {
+        background-position: left;
+        }
+        100%{
+            background-position: right;
+        }
+}
+
+.homework{
+    width: 50vw;
+    padding: 8px 16px;
+    box-shadow: 0 0 8px gray;
+
+}

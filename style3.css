@@ -1,0 +1,15 @@
+.boxShadow{
+    width: 300px;
+    height: 200px;
+    margin: 32px;
+    border: 1px solid gray;
+    box-shadow: 16px -16px 16px black;
+}
+
+.littleShadow{
+    width: 300px;
+    height: 200px;
+    margin: 32px;
+    border: 1px solid gray;
+    box-shadow: -16px 16px 16px black;
+}

@@ -1,0 +1,60 @@
+:root {
+  --bg-color: linear-gradient(90deg, blueviolet, gray, aqua);
+  --bg-color-txt: linear-gradient(90deg, green, orange);
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: var(--bg-color);
+  background-size: 300%;
+  animation: bg 7s infinite alternate;
+}
+
+.homework {
+  width: 50vw;
+  padding: 8px 16px;
+  box-shadow: 0 0 8px gray;
+  background-color: burlywood;
+}
+
+@keyframes bg {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+.title {
+  background-image: var(--bg-color-txt);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: bg 3s infinite alternate;
+  background-size: 200%;
+}
+@media (min-width: 1024px) {
+  .title {
+    color: blue;
+    font-size: 3rem;
+    line-height: 30px;
+    font-weight: 700;
+  }
+}
+@media (min-width: 483px) and (max-width: 1023) {
+  .title {
+    font-size: 2rem;
+    line-height: 20px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 479) {
+  .title {
+    font-size: 1rem;
+    line-height: 18px;
+    font-weight: 400;
+  }
+}/*# sourceMappingURL=style2.css.map */
